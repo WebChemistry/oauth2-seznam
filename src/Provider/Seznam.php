@@ -36,17 +36,17 @@ final class Seznam extends AbstractProvider
 
 	public function getBaseAuthorizationUrl(): string
 	{
-		return 'https://login.szn.cz/api/v1/oauth/auth';
+		return 'https://login.seznam.cz/api/v1/oauth/auth';
 	}
 
 	public function getBaseAccessTokenUrl(array $params): string
 	{
-		return 'https://login.szn.cz/api/v1/oauth/token';
+		return 'https://login.seznam.cz/api/v1/oauth/token';
 	}
 
 	public function getResourceOwnerDetailsUrl(AccessToken $token): string
 	{
-		return 'https://login.szn.cz/api/v1/user';
+		return 'https://login.seznam.cz/api/v1/user';
 	}
 
 	protected function getDefaultScopes()
